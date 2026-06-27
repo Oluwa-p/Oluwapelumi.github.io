@@ -2,19 +2,19 @@
    TOKENS
    ========================================================= */
 :root{
-  --paper:        #0E1014;
-  --paper-raised: #171A21;
-  --ink:          #E9EBEF;
-  --ink-soft:     #8E96A3;
-  --line:         #272B35;
-  --accent:       #E8920C;
-  --accent-soft:  rgba(232,146,12,0.14);
-  --good:         #34C795;
+  --paper:        #0A0E16;
+  --paper-raised: #121929;
+  --ink:          #E8EDF5;
+  --ink-soft:     #8995AC;
+  --line:         #232C40;
+  --accent:       #38BDF8;
+  --accent-soft:  rgba(56,189,248,0.14);
+  --good:         #2DD4BF;
 
-  --sql-kw:       #E8920C;
-  --sql-str:      #34C795;
-  --sql-num:      #6FB7E0;
-  --sql-comment:  #5B6472;
+  --sql-kw:       #38BDF8;
+  --sql-str:      #2DD4BF;
+  --sql-num:      #A78BFA;
+  --sql-comment:  #5C6B85;
 
   --font-display: 'Space Grotesk', sans-serif;
   --font-body:    'Inter', sans-serif;
@@ -133,8 +133,8 @@ h1, h2, h3{
 }
 .btn:hover{ transform: translateY(-1px); }
 
-.btn-primary{ background: var(--accent); color: #18130A; }
-.btn-primary:hover{ background: #FBA536; }
+.btn-primary{ background: var(--accent); color: #051119; }
+.btn-primary:hover{ background: #6BD3FB; }
 
 .btn-ghost{ border-color: var(--line); color: var(--ink); }
 .btn-ghost:hover{ border-color: var(--ink); }
@@ -220,7 +220,7 @@ h1, h2, h3{
   text-transform: uppercase;
   letter-spacing: 0.05em;
   background: var(--accent);
-  color: #18130A;
+  color: #051119;
   border-radius: 3px;
   padding: 3px 7px;
   margin-right: 10px;
@@ -314,6 +314,20 @@ h1, h2, h3{
   font-size: 14.5px;
   margin: 0 0 16px;
 }
+.project-card--media .project-thumb{
+  width: calc(100% + 48px);
+  max-width: calc(100% + 48px);
+  margin: -24px -24px 16px;
+  display: block;
+  border-bottom: 1px solid var(--line);
+}
+.project-metrics{
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  margin: -4px 0 16px;
+}
+.project-metrics strong{ color: var(--ink); font-weight: 600; }
 .card-link{
   display: inline-block;
   margin-top: 14px;
